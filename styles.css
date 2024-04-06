@@ -3,9 +3,15 @@
   font-weight: 400;
   font-style: normal;
 }
+.element {
+  filter: blur(5px);
+  -webkit-filter: blur(5px); /* Для Chrome 18, Safari 6 */
+  -moz-filter: blur(5px); /* Для Firefox */
+  -o-filter: blur(5px); /* Для Opera 15 */
+  -ms-filter: blur(5px); /* Для Internet Explorer */
+}
 
 body {
-  /* font-family: Arial, sans-serif; */
   background-color: #f98414;
   line-height: 1.6;
   margin: 0;
@@ -47,10 +53,9 @@ header h1 {
 .photo {
   text-align: center;
   float: left;
-  width: 32%;
+  width: 30%;
   margin: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  /* transition: transform 0.3s ease; */
   -webkit-filter: brightness(50%);
   -webkit-transition: all 1s ease;
   -moz-transition: all 1s ease;
