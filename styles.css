@@ -50,7 +50,13 @@ header h1 {
   width: 32%;
   margin: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  transition: transform 0.3s ease;
+  /* transition: transform 0.3s ease; */
+  -webkit-filter: brightness(50%);
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  transition: all 1s ease;
 }
 a:hover {
   color: #ae2e02;
@@ -68,6 +74,7 @@ a:hover {
 
 .photo:hover {
   transform: scale(1.05);
+  -webkit-filter: brightness(100%);
 }
 
 .caption {
